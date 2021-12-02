@@ -1,0 +1,703 @@
+2021-12-02 08:16:38.367  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 12044 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:16:38.377 DEBUG 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:16:38.380  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:16:47.430  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:16:47.957  WARN 12044 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:16:48.437  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 10.916 seconds (JVM running for 12.643)
+2021-12-02 08:16:48.442  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:16:48.445  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 08:20:40.644  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 12044 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:20:40.644 DEBUG 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:20:40.645  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:20:41.671  WARN 12044 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:20:41.857  WARN 12044 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:20:41.960  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.39 seconds (JVM running for 246.167)
+2021-12-02 08:20:41.964  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:20:41.965  INFO 12044 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 08:22:13.578  INFO 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 4080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:22:13.581 DEBUG 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:22:13.582  INFO 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:22:19.745  WARN 4080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:22:20.301  WARN 4080 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:22:20.821  INFO 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 8.108 seconds (JVM running for 9.752)
+2021-12-02 08:22:20.827  INFO 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:22:20.830  INFO 4080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 08:39:08.134  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:39:08.137 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:39:08.138  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:39:14.522  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:39:15.067  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:39:15.577  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 8.225 seconds (JVM running for 9.862)
+2021-12-02 08:39:15.583  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:39:15.586  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 08:40:04.786  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:40:04.787 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:40:04.787  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:40:05.819  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:40:05.951  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:40:06.047  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.339 seconds (JVM running for 60.332)
+2021-12-02 08:40:06.052  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:40:06.053  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 08:40:55.280  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 08:40:55.281 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 08:40:55.281  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 08:40:56.168  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 08:40:56.297  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 08:40:56.385  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.165 seconds (JVM running for 110.67)
+2021-12-02 08:40:56.388  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 08:40:56.388  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:01:14.280  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:01:14.282 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:01:14.283  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 09:01:16.126  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:01:16.312  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:01:16.398  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.256 seconds (JVM running for 1330.683)
+2021-12-02 09:01:16.401  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:01:16.401  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:01:46.918  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:01:46.919 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:01:46.920  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : No active profile set, falling back to default profiles: default
+2021-12-02 09:01:48.246  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:01:48.402  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:01:48.502  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.659 seconds (JVM running for 1362.787)
+2021-12-02 09:01:48.506  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:01:48.507  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:30:14.795  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:30:14.796 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:30:14.796  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 09:30:16.274  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:30:16.486  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:30:16.607  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.994 seconds (JVM running for 3070.892)
+2021-12-02 09:30:16.611  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:30:16.611  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:39:52.607  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:39:52.607 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:39:52.608  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 09:39:54.345  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:39:54.474  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:39:54.553  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.002 seconds (JVM running for 3648.838)
+2021-12-02 09:39:54.555  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:39:54.557  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:40:40.648  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:40:40.649 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:40:40.649  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 09:40:41.659  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:40:41.776  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:40:41.852  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.266 seconds (JVM running for 3696.137)
+2021-12-02 09:40:41.855  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:40:41.856  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:41:35.785  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:41:35.786 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:41:35.786  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 09:41:36.783  WARN 17528 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 09:41:36.890  WARN 17528 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 09:41:36.963  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.246 seconds (JVM running for 3751.248)
+2021-12-02 09:41:36.966  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 09:41:36.966  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 09:54:38.814  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 17528 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 09:54:38.814 DEBUG 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 09:54:38.814  INFO 17528 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 09:54:39.262  WARN 17528 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bridgelabz.lmsapi.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17597d00]
+2021-12-02 09:54:39.337 ERROR 17528 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bridgelabz.lmsapi.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17597d00]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.bridgelabz.lmsapi.LmsApiApplication.main(LmsApiApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.bridgelabz.lmsapi.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17597d00]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.bridgelabz.lmsapi.service.UserService] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@17597d00]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:739) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:671) ~[spring-core-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.buildPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:407) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.findPersistenceMetadata(PersistenceAnnotationBeanPostProcessor.java:388) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.orm.jpa.support.PersistenceAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(PersistenceAnnotationBeanPostProcessor.java:335) ~[spring-orm-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1116) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 34 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/mail/javamail/JavaMailSender
+	at java.base/java.lang.Class.getDeclaredFields0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredFields(Class.java:3297) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredFields(Class.java:2371) ~[na:na]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:734) ~[spring-core-5.3.13.jar:5.3.13]
+	... 40 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.mail.javamail.JavaMailSender
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:145) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 44 common frames omitted
+
+2021-12-02 10:06:49.204  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 2596 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:06:49.205 DEBUG 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:06:49.206  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:06:53.608  WARN 2596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:06:53.980  WARN 2596 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:06:54.339  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 5.535 seconds (JVM running for 6.509)
+2021-12-02 10:06:54.342  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:06:54.343  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:08:00.389  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 2596 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:08:00.389 DEBUG 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:08:00.390  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:08:08.371  WARN 2596 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:08:08.436  WARN 2596 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:08:08.479  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 8.121 seconds (JVM running for 80.649)
+2021-12-02 10:08:08.482  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:08:08.482  INFO 2596 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:09:06.974  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:09:06.975 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:09:06.976  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:09:16.005  WARN 15080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:09:16.284  WARN 15080 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:09:16.551  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 9.972 seconds (JVM running for 10.849)
+2021-12-02 10:09:16.554  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:09:16.556  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:23:52.359  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:23:52.359 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:23:52.359  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:24:00.986  WARN 15080 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+2021-12-02 10:24:01.020 ERROR 15080 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.bridgelabz.lmsapi.LmsApiApplication.main(LmsApiApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at com.bridgelabz.lmsapi.service.UserService.<init>(UserService.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 38 common frames omitted
+
+2021-12-02 10:24:02.486  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:24:02.487 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:24:02.487  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:24:08.722  WARN 15080 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+2021-12-02 10:24:08.735 ERROR 15080 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.bridgelabz.lmsapi.LmsApiApplication.main(LmsApiApplication.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userService' defined in file [C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes\com\bridgelabz\lmsapi\service\UserService.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.bridgelabz.lmsapi.service.UserService]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 36 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.security cannot be resolved
+	The import org.springframework.security cannot be resolved
+	PasswordEncoder cannot be resolved to a type
+	BCryptPasswordEncoder cannot be resolved to a type
+	PasswordEncoder cannot be resolved to a type
+
+	at com.bridgelabz.lmsapi.service.UserService.<init>(UserService.java:14) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 38 common frames omitted
+
+2021-12-02 10:25:41.217  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:25:41.218 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:25:41.218  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:25:47.035  WARN 15080 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:25:47.114  WARN 15080 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:25:47.167  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 6.006 seconds (JVM running for 1001.464)
+2021-12-02 10:25:47.170  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:25:47.170  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:27:11.704  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:27:11.704 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:27:11.704  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:27:18.057  WARN 15080 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'passwordEncoder'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.security.crypto.password.PasswordEncoder' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-12-02 10:27:18.070 ERROR 15080 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field passwordEncoder in com.bridgelabz.lmsapi.service.UserService required a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.security.crypto.password.PasswordEncoder' in your configuration.
+
+2021-12-02 10:27:26.114  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 15080 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:27:26.115 DEBUG 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:27:26.115  INFO 15080 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:27:30.522  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 8692 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:27:30.524 DEBUG 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:27:30.524  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:27:36.469  WARN 8692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:27:36.747  WARN 8692 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:27:36.892  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 6.748 seconds (JVM running for 7.512)
+2021-12-02 10:27:36.894  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:27:36.896  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:28:22.705  WARN 8692 --- [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-12-02 10:28:38.025 DEBUG 8692 --- [http-nio-8080-exec-5] c.b.lmsapi.controller.UserController     : LMS user DTO: UserDTO(userName=SanjayPandit, profilePath=sanju.jpg, email=sanju188@gmail.com, password=Tata17851, contactNumber=7894561231)
+2021-12-02 10:30:55.326 ERROR 8692 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: rawPassword cannot be null] with root cause
+
+java.lang.IllegalArgumentException: rawPassword cannot be null
+	at org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder.matches(BCryptPasswordEncoder.java:123) ~[spring-security-crypto-5.6.0.jar:5.6.0]
+	at com.bridgelabz.lmsapi.service.UserService.loginRequest(UserService.java:76) ~[classes/:na]
+	at com.bridgelabz.lmsapi.controller.UserController.loginUser(UserController.java:93) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-02 10:33:15.851  WARN 8692 --- [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2021-12-02 10:33:15.875 ERROR 8692 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null
+	at com.bridgelabz.lmsapi.controller.UserController.loginUser(UserController.java:94) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-02 10:33:49.620  WARN 8692 --- [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2021-12-02 10:33:49.623 ERROR 8692 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null
+	at com.bridgelabz.lmsapi.controller.UserController.loginUser(UserController.java:94) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-02 10:34:44.532  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 8692 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:34:44.532 DEBUG 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:34:44.532  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:34:51.370  WARN 8692 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:34:51.448  WARN 8692 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:34:51.476  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 6.979 seconds (JVM running for 442.096)
+2021-12-02 10:34:51.478  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:34:51.478  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:34:53.994  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 8692 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:34:53.994 DEBUG 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:34:53.995  INFO 8692 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:34:58.108  INFO 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 8360 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:34:58.109 DEBUG 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:34:58.109  INFO 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:35:04.115  WARN 8360 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:35:04.425  WARN 8360 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:35:04.552  INFO 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 6.826 seconds (JVM running for 7.565)
+2021-12-02 10:35:04.555  INFO 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:35:04.557  INFO 8360 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:35:29.264  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 14320 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:35:29.265 DEBUG 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:35:29.265  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:35:32.557  WARN 14320 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:35:32.839  WARN 14320 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:35:32.949  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.077 seconds (JVM running for 4.9)
+2021-12-02 10:35:32.952  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:35:32.953  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:35:44.144 DEBUG 14320 --- [http-nio-8080-exec-3] c.b.lmsapi.controller.UserController     : LMS user DTO: UserDTO(userName=SanjayPandit, profilePath=sanju.jpg, email=sanju188@gmail.com, password=Tata17851, contactNumber=7894561231)
+2021-12-02 10:35:50.293  WARN 14320 --- [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2021-12-02 10:35:50.303 ERROR 14320 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null] with root cause
+
+java.lang.NullPointerException: Cannot invoke "com.bridgelabz.lmsapi.model.User.getUserId()" because "user" is null
+	at com.bridgelabz.lmsapi.controller.UserController.loginUser(UserController.java:94) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-02 10:37:49.991  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 14320 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:37:49.992 DEBUG 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:37:49.992  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:37:50.578  WARN 14320 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:37:50.652  WARN 14320 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:37:50.675  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 0.732 seconds (JVM running for 142.626)
+2021-12-02 10:37:50.677  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:37:50.677  INFO 14320 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 10:37:53.833  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 932 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 10:37:53.835 DEBUG 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 10:37:53.835  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 10:37:56.891  WARN 932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:37:57.163  WARN 932 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 10:37:57.303  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 3.869 seconds (JVM running for 4.722)
+2021-12-02 10:37:57.306  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 10:37:57.307  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 11:49:59.007  WARN 932 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m2s193ms924µs).
+2021-12-02 12:28:28.133  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 932 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 12:28:28.134 DEBUG 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 12:28:28.135  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 12:28:30.319  WARN 932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 12:28:30.499  WARN 932 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 12:28:30.549  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.491 seconds (JVM running for 6637.978)
+2021-12-02 12:28:30.552  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 12:28:30.553  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
+2021-12-02 12:28:32.234  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 932 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-02 12:28:32.234 DEBUG 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-02 12:28:32.235  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-02 12:28:33.326  WARN 932 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 12:28:33.487  WARN 932 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
+2021-12-02 12:28:33.546  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.392 seconds (JVM running for 6640.976)
+2021-12-02 12:28:33.550  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-02 12:28:33.550  INFO 932 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser

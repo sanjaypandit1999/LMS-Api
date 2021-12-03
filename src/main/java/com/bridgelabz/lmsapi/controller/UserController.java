@@ -127,16 +127,42 @@ public class UserController {
 	}
 	
     /**
-     * Takes emailId and password to login in application
-     *
-     * @param loginRequest
-     * @return LoginResponse
-     */
+	 * Takes emailId and password to login in application
+	 *
+	 * @param loginRequest
+	 * @return LoginResponse
+	 */
 	@PostMapping("/login")
-    public ResponseEntity<ResponseDTO> loginUser(@Valid @RequestBody LoginDTO loginRequest) {
-        User user = iUserService.loginRequest(loginRequest);
-        ResponseDTO response = new ResponseDTO("Login Successfull", jwtToken.createToken(user.getUserId()));
+	public ResponseEntity<ResponseDTO> loginUser(@Valid @RequestBody LoginDTO loginRequest) {
+		User user = iUserService.loginRequest(loginRequest);
+		ResponseDTO response = new ResponseDTO("Login Successfull", jwtToken.createToken(user.getUserId()));
 		return new ResponseEntity<ResponseDTO>(response, HttpStatus.OK);
-    }
+	}
+
+    /**
+	 * Take emailId  to forget password
+	 *
+	 * @param forgetPass
+	 * @return ForgotPassword link sent successfulluy to emailId
+	 */
+	@GetMapping("/forgotpassword")
+	public ResponseEntity<ResponseDTO> ForgetPassword(@Valid @RequestBody ForgotPassDTO forgotPassDTO)
+			throws MessagingException {
+		User user = iUserService.forgetPassword(forgotPassDTO);
+		ResponseDTO response = new ResponseDTO("Forgot Password Successfull", user);
+		return new ResponseEntity<ResponseDTO>(response, HttpStatus.OK);
+	}
 	
+    /**
+	 * Takes token and password to reset password
+	 *
+	 * @param password and token
+	 * @return passWord reset successfull
+	 */
+	@PostMapping("/reset/{token}")
+	ResponseEntity<ResponseDTO> resetpass(@Valid @RequestParam String password, @PathVariable String token) {
+		User user = iUserService.reset(password, token);
+		ResponseDTO response = new ResponseDTO(" Password Reset Successfully", user);
+		return new ResponseEntity<ResponseDTO>(response, HttpStatus.OK);
+	}
 }

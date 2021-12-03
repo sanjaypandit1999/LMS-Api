@@ -72,7 +72,6 @@ public class User {
 		this.userName = userDTO.userName;
 		this.email = userDTO.email;
 		this.profilePath = userDTO.profilePath;
-		this.password = userDTO.password;
 		this.contactNumber=userDTO.contactNumber;
 		this.registerDate = new Date(System.currentTimeMillis());
 

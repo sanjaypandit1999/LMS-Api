@@ -1,5 +1,6 @@
 package com.bridgelabz.lmsapi.service;
 
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
@@ -21,6 +22,7 @@ import com.bridgelabz.lmsapi.dto.UserDTO;
 import com.bridgelabz.lmsapi.exception.UserException;
 import com.bridgelabz.lmsapi.model.User;
 import com.bridgelabz.lmsapi.repository.UserRepository;
+import com.bridgelabz.lmsapi.util.Email;
 import com.bridgelabz.lmsapi.util.JwtToken;
 
 @Service
@@ -31,11 +33,16 @@ public class UserService implements IUserService {
 
 	@Autowired
 	UserRepository userRepository;
-	
 	@Autowired
 	JavaMailSender javaMailSender;
-//	@Autowired
-//	PasswordEncoder passwordEncoder;
+
+	@Autowired
+	PasswordEncoder passwordEncoder;
+	@Autowired
+	MailService mailService;
+
+	@Autowired
+	Email email;
 
 	public List<User> getUser() {
 		return userRepository.findAll();
@@ -48,6 +55,7 @@ public class UserService implements IUserService {
 
 	public User createUser(@Valid UserDTO userDTO) {
 		User user = new User();
+		user.setPassword(passwordEncoder.encode(userDTO.password));
 		user.createUser(userDTO);
 		return userRepository.save(user);
 	}
@@ -74,9 +82,44 @@ public class UserService implements IUserService {
 		Optional<User> email = userRepository.findByEmail(loginRequest.getEmail());
 		if (email.isPresent()) {
 			System.out.println(email.get().toString());
-			if (loginRequest.getPassWord().equals(email.get().getPassword())) {
+			if (passwordEncoder.matches(loginRequest.getPassWord(), email.get().getPassword())) {
 				return email.get();
 			}
+		}
+		return null;
+	}
+
+	@Override
+	public User forgetPassword(ForgotPassDTO forgotPassDTO) throws MessagingException {
+		String emailId = forgotPassDTO.getEmail();
+		Optional<User> isPresent = userRepository.findByEmail(emailId);
+		if (isPresent.isPresent()) {
+			email.setTo(emailId);
+			email.setFrom("${email}");
+			email.setSubject("forgot password link");
+			String token = jwtToken.createToken(isPresent.get().getUserId());
+			email.setBody(mailService.getLink("http://localhost:8080/reset/", isPresent.get().getUserId()));
+			mailService.send(email.getTo(), email.getSubject(), email.getBody());
+			System.out.println("Suucc");
+
+			return isPresent.get();
+
+		}
+		return null;
+	}
+
+	@Override
+	public User reset(@Valid String password, String token) {
+		// DECODING TOKEN
+		Long id = jwtToken.decodeToken(token);
+		// CHECKING USER PRESENT OR NOT
+		Optional<User> user = userRepository.findById(id);
+		if (user.isPresent()) {
+			// SETTING THE NEW PASSWORD AND SAVING INTO THE DATABASE
+			user.get().setPassword(passwordEncoder.encode(password));
+
+			user.get().setUpdateDate(new Date(System.currentTimeMillis()));
+			return userRepository.save(user.get());
 		}
 		return null;
 	}

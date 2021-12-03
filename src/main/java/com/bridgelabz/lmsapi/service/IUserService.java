@@ -29,4 +29,8 @@ public interface IUserService {
 
 	User loginRequest(@Valid LoginDTO loginRequest);
 
+	User reset(@Valid String password, String token);
+	
+	User forgetPassword(@Valid ForgotPassDTO forgotPassDTO) throws MessagingException;
+
 }

@@ -4,7 +4,6 @@ import java.util.List;
 
 import javax.mail.MessagingException;
 import javax.validation.Valid;
-import javax.validation.constraints.Email;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

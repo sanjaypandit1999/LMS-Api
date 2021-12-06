@@ -1,6 +1,5 @@
 package com.bridgelabz.lmsapi.model;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -11,7 +10,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
-import javax.validation.Valid;
 
 import com.bridgelabz.lmsapi.dto.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;

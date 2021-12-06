@@ -5,14 +5,10 @@ import java.util.List;
 import java.util.Optional;
 
 import javax.mail.MessagingException;
-import javax.mail.internet.MimeMessage;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.MimeMessageHelper;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -89,18 +85,17 @@ public class UserService implements IUserService {
 		return null;
 	}
 
+	@SuppressWarnings("static-access")
 	@Override
 	public User forgetPassword(ForgotPassDTO forgotPassDTO) throws MessagingException {
 		String emailId = forgotPassDTO.getEmail();
 		Optional<User> isPresent = userRepository.findByEmail(emailId);
 		if (isPresent.isPresent()) {
 			email.setTo(emailId);
-			email.setFrom("${email}");
+			email.setFrom(System.getenv("email"));
 			email.setSubject("forgot password link");
-			String token = jwtToken.createToken(isPresent.get().getUserId());
-			email.setBody(mailService.getLink("http://localhost:8080/reset/", isPresent.get().getUserId()));
+			email.setBody(mailService.getLink("Hii  " +isPresent.get().getUserName()+ " Reset your password -"+" http://localhost:8080/reset/", isPresent.get().getUserId()));
 			mailService.send(email.getTo(), email.getSubject(), email.getBody());
-			System.out.println("Suucc");
 
 			return isPresent.get();
 

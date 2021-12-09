@@ -20,6 +20,7 @@ import com.bridgelabz.lmsapi.model.User;
 import com.bridgelabz.lmsapi.repository.UserRepository;
 import com.bridgelabz.lmsapi.util.Email;
 import com.bridgelabz.lmsapi.util.JwtToken;
+import com.bridgelabz.lmsapi.util.MessageProducer;
 
 @Service
 public class UserService implements IUserService {
@@ -39,6 +40,8 @@ public class UserService implements IUserService {
 
 	@Autowired
 	Email email;
+	@Autowired
+	private MessageProducer messageproducer;
 
 	public List<User> getUser() {
 		return userRepository.findAll();
@@ -85,7 +88,6 @@ public class UserService implements IUserService {
 		return null;
 	}
 
-	@SuppressWarnings("static-access")
 	@Override
 	public User forgetPassword(ForgotPassDTO forgotPassDTO) throws MessagingException {
 		String emailId = forgotPassDTO.getEmail();
@@ -95,7 +97,7 @@ public class UserService implements IUserService {
 			email.setFrom(System.getenv("email"));
 			email.setSubject("forgot password link");
 			email.setBody(mailService.getLink("Hii  " +isPresent.get().getUserName()+ " Reset your password -"+" http://localhost:8080/reset/", isPresent.get().getUserId()));
-			mailService.send(email.getTo(), email.getSubject(), email.getBody());
+			messageproducer.sendMessage(email);
 
 			return isPresent.get();
 

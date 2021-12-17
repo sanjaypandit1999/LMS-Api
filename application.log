@@ -1,53 +1,146 @@
-2021-12-08 09:30:21.621  INFO 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 1592 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
-2021-12-08 09:30:21.625 DEBUG 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
-2021-12-08 09:30:21.626  INFO 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
-2021-12-08 09:30:25.157  WARN 1592 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-08 09:30:25.449  WARN 1592 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2021-12-08 09:30:25.720  INFO 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.496 seconds (JVM running for 5.881)
-2021-12-08 09:30:25.724  INFO 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
-2021-12-08 09:30:25.727  INFO 1592 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
-2021-12-08 09:32:06.639  WARN 1592 --- [container-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+2021-12-17 12:00:48.354  INFO 12216 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 12216 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:00:48.372 DEBUG 12216 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:00:48.373  INFO 12216 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:01:16.030  WARN 12216 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'dataSourceScriptDatabaseInitializer' defined in class path resource [org/springframework/boot/autoconfigure/sql/init/DataSourceInitializationConfiguration.class]: Unsatisfied dependency expressed through method 'dataSourceScriptDatabaseInitializer' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.autoconfigure.jdbc.DataSourceProperties$DataSourceBeanCreationException: Failed to determine a suitable driver class
+2021-12-17 12:01:16.592 ERROR 12216 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener threw exception
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:1771) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1661) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1576) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1564) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1555) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1499) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:969) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:915) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1600(SimpleMessageListenerContainer.java:83) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1290) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1196) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-Caused by: org.springframework.amqp.AmqpRejectAndDontRequeueException: No correlation header in reply
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.onMessage(RabbitTemplate.java:2651) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.adapter.MessageListenerAdapter.onMessage(MessageListenerAdapter.java:273) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1657) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	... 10 common frames omitted
+***************************
+APPLICATION FAILED TO START
+***************************
 
-2021-12-08 09:33:37.859  INFO 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16380 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
-2021-12-08 09:33:37.860 DEBUG 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
-2021-12-08 09:33:37.861  INFO 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
-2021-12-08 09:33:40.955  WARN 16380 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-08 09:33:41.245  WARN 16380 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2021-12-08 09:33:41.494  INFO 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.005 seconds (JVM running for 4.758)
-2021-12-08 09:33:41.497  INFO 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
-2021-12-08 09:33:41.499  INFO 16380 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
-2021-12-08 09:33:46.534 ERROR 16380 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalArgumentException: SimpleMessageConverter only supports String, byte[] and Serializable payloads, received: com.bridgelabz.lmsapi.util.Email] with root cause
+Description:
 
-java.lang.IllegalArgumentException: SimpleMessageConverter only supports String, byte[] and Serializable payloads, received: com.bridgelabz.lmsapi.util.Email
-	at org.springframework.amqp.support.converter.SimpleMessageConverter.createMessage(SimpleMessageConverter.java:164) ~[spring-amqp-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.support.converter.AbstractMessageConverter.createMessage(AbstractMessageConverter.java:88) ~[spring-amqp-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.support.converter.AbstractMessageConverter.toMessage(AbstractMessageConverter.java:70) ~[spring-amqp-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.support.converter.AbstractMessageConverter.toMessage(AbstractMessageConverter.java:58) ~[spring-amqp-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertMessageIfNecessary(RabbitTemplate.java:1815) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1130) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.core.RabbitTemplate.convertAndSend(RabbitTemplate.java:1112) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at com.bridgelabz.lmsapi.util.MessageProducer.sendMessage(MessageProducer.java:23) ~[classes/:na]
-	at com.bridgelabz.lmsapi.service.UserService.forgetPassword(UserService.java:100) ~[classes/:na]
-	at com.bridgelabz.lmsapi.controller.UserController.ForgetPassword(UserController.java:150) ~[classes/:na]
+Failed to configure a DataSource: 'url' attribute is not specified and no embedded datasource could be configured.
+
+Reason: Failed to determine a suitable driver class
+
+
+Action:
+
+Consider the following:
+	If you want an embedded database (H2, HSQL or Derby), please put it on the classpath.
+	If you have database settings to be loaded from a particular profile you may need to activate it (the profiles dev are currently active).
+
+2021-12-17 12:22:17.248  INFO 19368 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 19368 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:22:17.250 DEBUG 19368 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:22:17.250  INFO 19368 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:22:35.718  WARN 19368 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.bridgelabz.lmsapi.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.data.jpa cannot be resolved
+	Query cannot be resolved to a type
+
+2021-12-17 12:22:35.914 ERROR 19368 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.bridgelabz.lmsapi.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.data.jpa cannot be resolved
+	Query cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:944) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.13.jar:5.3.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:412) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:302) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.1.jar:2.6.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1290) ~[spring-boot-2.6.1.jar:2.6.1]
+	at com.bridgelabz.lmsapi.LmsApiApplication.main(LmsApiApplication.java:16) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.1.jar:2.6.1]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'userRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.bridgelabz.lmsapi.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.data.jpa cannot be resolved
+	Query cannot be resolved to a type
+
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.bridgelabz.lmsapi.repository.UserRepository defined in @EnableMongoRepositories declared on MongoRepositoriesRegistrar.EnableMongoRepositoriesConfiguration: Invocation of init method failed; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.data.jpa cannot be resolved
+	Query cannot be resolved to a type
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1380) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1300) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 39 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import org.springframework.data.jpa cannot be resolved
+	Query cannot be resolved to a type
+
+	at com.bridgelabz.lmsapi.repository.UserRepository.<clinit>(UserRepository.java:5) ~[classes/:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:375) ~[na:na]
+	at jdk.proxy3/jdk.proxy3.$Proxy72.<clinit>(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
+	at java.base/java.lang.reflect.Proxy.newProxyInstance(Proxy.java:1053) ~[na:na]
+	at java.base/java.lang.reflect.Proxy.newProxyInstance(Proxy.java:1039) ~[na:na]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.getProxy(JdkDynamicAopProxy.java:126) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:110) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:370) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.util.Lazy.get(Lazy.java:114) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.mongodb.repository.support.MongoRepositoryFactoryBean.afterPropertiesSet(MongoRepositoryFactoryBean.java:119) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.13.jar:5.3.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.13.jar:5.3.13]
+	... 49 common frames omitted
+
+2021-12-17 12:23:19.781  INFO 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 10024 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:23:19.782 DEBUG 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:23:19.782  INFO 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:23:30.943  INFO 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 11.582 seconds (JVM running for 12.315)
+2021-12-17 12:23:30.946  INFO 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 12:23:30.975  INFO 10024 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 12:24:00.239  WARN 10024 --- [http-nio-8081-exec-3] javax.persistence.spi                    : javax.persistence.spi::No valid providers found.
+2021-12-17 12:24:00.526 DEBUG 10024 --- [http-nio-8081-exec-3] c.b.lmsapi.controller.UserController     : LMS user DTO: UserDTO(userName=Sidarth, profilePath=sanju.jpg, email=sanjay7001532411@gmail.com, password=D5s@788855555, contactNumber=7894561231)
+2021-12-17 12:25:50.259  WARN 10024 --- [http-nio-8081-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' not supported]
+2021-12-17 12:35:16.418 ERROR 10024 --- [http-nio-8081-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is com.auth0.jwt.exceptions.SignatureVerificationException: The Token's Signature resulted invalid when verified using the Algorithm: HmacSHA256] with root cause
+
+com.auth0.jwt.exceptions.SignatureVerificationException: The Token's Signature resulted invalid when verified using the Algorithm: HmacSHA256
+	at com.auth0.jwt.algorithms.HMACAlgorithm.verify(HMACAlgorithm.java:50) ~[java-jwt-3.8.1.jar:3.8.1]
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:386) ~[java-jwt-3.8.1.jar:3.8.1]
+	at com.auth0.jwt.JWTVerifier.verify(JWTVerifier.java:370) ~[java-jwt-3.8.1.jar:3.8.1]
+	at com.bridgelabz.lmsapi.util.JwtToken.decodeToken(JwtToken.java:42) ~[classes/:na]
+	at com.bridgelabz.lmsapi.service.UserService.reset(UserService.java:111) ~[classes/:na]
+	at com.bridgelabz.lmsapi.controller.UserController.resetpass(UserController.java:163) ~[classes/:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
@@ -61,8 +154,8 @@ java.lang.IllegalArgumentException: SimpleMessageConverter only supports String,
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.13.jar:5.3.13]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
 	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
 	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
 	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
@@ -99,43 +192,254 @@ java.lang.IllegalArgumentException: SimpleMessageConverter only supports String,
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2021-12-08 09:47:43.940  INFO 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 4392 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
-2021-12-08 09:47:43.941 DEBUG 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
-2021-12-08 09:47:43.941  INFO 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
-2021-12-08 09:47:47.087  WARN 4392 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-08 09:47:47.380  WARN 4392 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2021-12-08 09:47:47.634  INFO 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.071 seconds (JVM running for 4.887)
-2021-12-08 09:47:47.637  INFO 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
-2021-12-08 09:47:47.639  INFO 4392 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
-2021-12-08 09:47:50.553  WARN 4392 --- [container-1] s.a.r.l.ConditionalRejectingErrorHandler : Execution of Rabbit message listener failed.
+2021-12-17 12:38:22.239  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 3568 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:38:22.243 DEBUG 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:38:22.244  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:38:30.213  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 8.866 seconds (JVM running for 10.387)
+2021-12-17 12:38:30.221  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 12:38:30.223  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 12:42:33.047 ERROR 3568 --- [http-nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.; nested exception is com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.] with root cause
 
-org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener threw exception
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:1771) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1661) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1576) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1564) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1555) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1499) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:969) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:915) ~[spring-rabbit-2.4.0.jar:2.4.0]
-	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1600(SimpleMessageListenerContainer.java:83) ~[spring-rabbit-2.4.0.jar:2.4.0]
+com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1018) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:471) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:454) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:448) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1465) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:555) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1459) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1259) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1174) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:95) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.13.jar:5.3.13]
+	at jdk.proxy3/jdk.proxy3.$Proxy75.save(Unknown Source) ~[na:na]
+	at com.bridgelabz.lmsapi.service.UserService.reset(UserService.java:119) ~[classes/:na]
+	at com.bridgelabz.lmsapi.controller.UserController.resetpass(UserController.java:164) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
 
-2021-12-08 10:20:25.906  INFO 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 8476 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
-2021-12-08 10:20:25.908 DEBUG 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
-2021-12-08 10:20:25.908  INFO 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
-2021-12-08 10:20:29.078  WARN 8476 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-08 10:20:29.360  WARN 8476 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2021-12-08 10:20:29.638  INFO 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.121 seconds (JVM running for 4.939)
-2021-12-08 10:20:29.641  INFO 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
-2021-12-08 10:20:29.642  INFO 8476 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
-2021-12-08 10:22:23.046  INFO 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 13220 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
-2021-12-08 10:22:23.047 DEBUG 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
-2021-12-08 10:22:23.048  INFO 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
-2021-12-08 10:22:26.227  WARN 13220 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-12-08 10:22:26.522  WARN 13220 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.OffsetDateTime to class org.springframework.data.jdbc.core.convert.JdbcValue as writing converter although it doesn't convert to a store-supported type! You might want to check your annotation setup at the converter implementation.
-2021-12-08 10:22:26.799  INFO 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 4.133 seconds (JVM running for 4.874)
-2021-12-08 10:22:26.803  INFO 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
-2021-12-08 10:22:26.805  INFO 13220 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is lmsuser
-2021-12-08 11:40:40.095  WARN 13220 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m43s981ms343µs700ns).
-2021-12-08 17:27:42.324  WARN 13220 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h10m19s870ms13µs400ns).
-2021-12-08 18:46:48.650  WARN 13220 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m2s310ms495µs300ns).
+2021-12-17 12:44:48.611  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 3568 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:44:48.612 DEBUG 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:44:48.612  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:44:50.588  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.015 seconds (JVM running for 390.762)
+2021-12-17 12:44:50.590  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 12:44:50.591  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 12:50:02.390  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 3568 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 12:50:02.391 DEBUG 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 12:50:02.391  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 12:50:03.452  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.088 seconds (JVM running for 703.625)
+2021-12-17 12:50:03.455  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 12:50:03.455  INFO 3568 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 13:01:36.455  WARN 3568 --- [http-nio-8081-exec-3] javax.persistence.spi                    : javax.persistence.spi::No valid providers found.
+2021-12-17 13:01:36.563 DEBUG 3568 --- [http-nio-8081-exec-3] c.b.lmsapi.controller.UserController     : LMS user DTO: UserDTO(userName=Sidarth, profilePath=sanju.jpg, email=sanjay7001532411@gmail.com, password=D5s@788855555, contactNumber=7894561231)
+2021-12-17 13:02:04.759 ERROR 3568 --- [http-nio-8081-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.; nested exception is com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.] with root cause
+
+com.mongodb.MongoWriteException: Write operation error on server localhost:27017. Write error: WriteError{code=11000, message='E11000 duplicate key error collection: LmsUser.Admin index: _id_ dup key: { _id: 0 }', details={}}.
+	at com.mongodb.client.internal.MongoCollectionImpl.executeSingleWriteRequest(MongoCollectionImpl.java:1018) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.executeInsertOne(MongoCollectionImpl.java:471) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:454) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at com.mongodb.client.internal.MongoCollectionImpl.insertOne(MongoCollectionImpl.java:448) ~[mongodb-driver-sync-4.4.0.jar:na]
+	at org.springframework.data.mongodb.core.MongoTemplate.lambda$insertDocument$16(MongoTemplate.java:1465) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.execute(MongoTemplate.java:555) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.insertDocument(MongoTemplate.java:1459) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.doInsert(MongoTemplate.java:1259) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.core.MongoTemplate.insert(MongoTemplate.java:1174) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at org.springframework.data.mongodb.repository.support.SimpleMongoRepository.save(SimpleMongoRepository.java:95) ~[spring-data-mongodb-3.3.0.jar:3.3.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:289) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:137) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:121) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:529) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:638) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:163) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:138) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:80) ~[spring-data-commons-2.6.0.jar:2.6.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.13.jar:5.3.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.13.jar:5.3.13]
+	at jdk.proxy5/jdk.proxy5.$Proxy105.save(Unknown Source) ~[na:na]
+	at com.bridgelabz.lmsapi.service.UserService.reset(UserService.java:119) ~[classes/:na]
+	at com.bridgelabz.lmsapi.controller.UserController.resetpass(UserController.java:164) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:681) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.13.jar:5.3.13]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764) ~[tomcat-embed-core-9.0.55.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.13.jar:5.3.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1722) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.55.jar:9.0.55]
+	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+
+2021-12-17 13:03:46.037  INFO 9084 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 9084 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 13:03:46.038 DEBUG 9084 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 13:03:46.039  INFO 9084 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 13:03:49.480  WARN 9084 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'iUserService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userService': Unsatisfied dependency expressed through field 'sequenceGeneratorService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bridgelabz.lmsapi.service.SequenceGeneratorService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-12-17 13:03:49.516 ERROR 9084 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sequenceGeneratorService in com.bridgelabz.lmsapi.service.UserService required a bean of type 'com.bridgelabz.lmsapi.service.SequenceGeneratorService' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.bridgelabz.lmsapi.service.SequenceGeneratorService' in your configuration.
+
+2021-12-17 13:04:16.930  INFO 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16432 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 13:04:16.931 DEBUG 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 13:04:16.931  INFO 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 13:04:20.217  INFO 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 3.701 seconds (JVM running for 4.489)
+2021-12-17 13:04:20.222  INFO 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 13:04:20.223  INFO 16432 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 13:04:43.298  WARN 16432 --- [http-nio-8081-exec-3] javax.persistence.spi                    : javax.persistence.spi::No valid providers found.
+2021-12-17 13:04:44.450 DEBUG 16432 --- [http-nio-8081-exec-3] c.b.lmsapi.controller.UserController     : LMS user DTO: UserDTO(userName=Sidarth, profilePath=sanju.jpg, email=sanjay7001532411@gmail.com, password=D5s@788855555, contactNumber=7894561231)
+2021-12-17 13:04:49.198  WARN 16432 --- [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.bridgelabz.lmsapi.exception.UserException: User not found]
+2021-12-17 13:11:13.034  INFO 1348 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 1348 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 13:11:13.035 DEBUG 1348 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 13:11:13.036  INFO 1348 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 13:11:18.179  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16404 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 13:11:18.181 DEBUG 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 13:11:18.181  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 13:11:21.488  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 3.736 seconds (JVM running for 4.517)
+2021-12-17 13:11:21.491  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 13:11:21.493  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 13:12:13.404  WARN 16404 --- [http-nio-8081-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'password' for method parameter type String is not present]
+2021-12-17 15:35:19.675  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16404 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 15:35:19.676 DEBUG 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 15:35:19.676  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 15:35:22.050  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.445 seconds (JVM running for 8645.09)
+2021-12-17 15:35:22.056  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 15:35:22.057  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 15:39:31.746  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16404 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 15:39:31.747 DEBUG 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 15:39:31.747  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 15:39:33.876  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 2.189 seconds (JVM running for 8896.917)
+2021-12-17 15:39:33.879  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 15:39:33.880  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null
+2021-12-17 15:53:27.256  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Starting LmsApiApplication using Java 17 on DESKTOP-U2KHA74 with PID 16404 (C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi\target\classes started by Sanju in C:\Users\Sanju\Desktop\Spring Project\LMSUser\LMSApi)
+2021-12-17 15:53:27.256 DEBUG 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Running with Spring Boot v2.6.1, Spring v5.3.13
+2021-12-17 15:53:27.256  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : The following profiles are active: dev
+2021-12-17 15:53:29.190  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : Started LmsApiApplication in 1.987 seconds (JVM running for 9732.23)
+2021-12-17 15:53:29.194  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : LMS App Started in DEV Environment
+2021-12-17 15:53:29.195  INFO 16404 --- [restartedMain] com.bridgelabz.lmsapi.LmsApiApplication  : lms DB User is null

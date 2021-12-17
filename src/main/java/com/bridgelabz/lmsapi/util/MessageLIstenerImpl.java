@@ -7,12 +7,23 @@ import org.springframework.stereotype.Component;
 
 import com.bridgelabz.lmsapi.service.MailService;
 
+/**
+ *purpose to listen the message from queue
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ */
 @Component
 public class MessageLIstenerImpl implements IMessageListener {
 	
 	@Autowired
 	private MailService  mailsender;
 
+	/**
+	 *purpose to send message to user
+	 *
+	 */
 	@SuppressWarnings("static-access")
 	@Override
 	public void onMessage(Email email) {

@@ -2,50 +2,52 @@ package com.bridgelabz.lmsapi.model;
 
 import java.util.Date;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.bridgelabz.lmsapi.dto.UserDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.Data;
 
-@Entity
-@Table(name = "employeepayroll_db")
+
+/**
+ * purpose to all data store in mongoDB as a document
+ * 
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ */
+@Document(collection ="Admin")
 @Data
 public class User {
+	  @Transient
+	    public static final String SEQUENCE_NAME = "users_sequence";
+	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long userId;
 
-	@Column(name = "username")
 	private String userName;
 
-	@Column(name = "email")
+
 	private String email;
 	
-	@Column(name = "profilePath")
+	
 	private String profilePath;
 
 	@JsonIgnore
-	@Column(name = "Password")
 	private String password;
 
-	@Column(name = "contact_number")
+
 	private long contactNumber;
 
 	private boolean active = true;
 
-	@Temporal(TemporalType.TIMESTAMP)
 	private Date registerDate;
 
-	@Temporal(TemporalType.TIMESTAMP)
+
 	private Date updateDate;
 
 	public User(UserDTO userDTO) {

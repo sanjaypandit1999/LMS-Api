@@ -10,10 +10,23 @@ import com.auth0.jwt.interfaces.DecodedJWT;
 import com.auth0.jwt.interfaces.JWTVerifier;
 import com.auth0.jwt.interfaces.Verification;
 
+/**
+ *Implement JWT service
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ */
 @Component
 public class JwtToken {
 	public final String TOKEN_SECRET = "Sanjay";
 
+	/**
+	 *purpose to create jwtToken using userId
+	 * 
+	 * @param userId
+	 * @return token
+	 */
 	public String createToken(long id) {
 		try {
 			Algorithm alogirthm = Algorithm.HMAC256(TOKEN_SECRET);
@@ -27,7 +40,13 @@ public class JwtToken {
 		}
 		return null;
 	}
-
+	
+	/**
+	 *purpose to decode the token get id
+	 * 
+	 * @param token
+	 * @return userId
+	 */
 	public Long decodeToken(String token) {
 		Long userid;
 		Verification verification = null;

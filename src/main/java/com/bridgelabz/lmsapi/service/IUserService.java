@@ -12,6 +12,13 @@ import com.bridgelabz.lmsapi.dto.LoginDTO;
 import com.bridgelabz.lmsapi.dto.UserDTO;
 import com.bridgelabz.lmsapi.model.User;
 
+/**
+ *Interface of userService layer
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ */
 @Service
 public interface IUserService {
 

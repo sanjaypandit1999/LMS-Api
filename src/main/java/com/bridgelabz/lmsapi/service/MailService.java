@@ -16,6 +16,13 @@ import org.springframework.stereotype.Component;
 
 import com.bridgelabz.lmsapi.util.JwtToken;
 
+/**
+ *purpose to send Mail create mailService
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ */
 @Component
 public class MailService {
 
@@ -65,8 +72,12 @@ public class MailService {
 		e.printStackTrace(); 
 		}
 	}
-	//body for the given user link is created here
-    public String getLink(String link,long id)
+	
+	/**
+	 *body for the given user link is created here
+	 *
+	 */
+    public String getLink(String link,long id)    
     {
         return link+jwtToken.createToken(id);
     }

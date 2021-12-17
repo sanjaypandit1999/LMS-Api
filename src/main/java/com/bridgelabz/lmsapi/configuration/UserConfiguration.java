@@ -13,14 +13,31 @@ import org.springframework.mail.javamail.MimeMessagePreparator;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * purpose to store object in bean
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ *
+ */
 @Configuration
 public class UserConfiguration {
+	
+	/**
+	 * purpose to encode password and store object in bean
+	 * 
+	 */
 	@Bean
 	public PasswordEncoder passwordencoder() {
 		return new BCryptPasswordEncoder();
 
 	}
 
+	/**
+	 * purpose to all JavaMailSender object store in bean
+	 * 
+	 */
 	@Bean
 	public JavaMailSender javamailsender() {
 		return new JavaMailSender() {

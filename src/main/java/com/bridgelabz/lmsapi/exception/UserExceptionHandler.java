@@ -15,11 +15,26 @@ import com.bridgelabz.lmsapi.dto.ResponseDTO;
 
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * purpose to handle Exception
+ * 
+ * @author Sanjay
+ * @version 1.0
+ * @since 12/17/2021
+ *
+ */
 @ControllerAdvice
 @Slf4j
 public class UserExceptionHandler {
 	private static final String message = "Exception While Processing REST Request";
 
+	/**
+	 * purpose to handle message readable exception
+	 * 
+	 * @param HttpMessageNotReadableException object
+	 * @return Bad request
+	 *
+	 */
 	@ExceptionHandler(HttpMessageNotReadableException.class)
 	public ResponseEntity<ResponseDTO> handelHttpMessageNotReadableException(
 			HttpMessageNotReadableException exception) {
@@ -28,6 +43,12 @@ public class UserExceptionHandler {
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
 	}
 
+	/**
+	 * purpose to handle validation exception
+	 * 
+	 * @param MethodArgumentNotValidException object
+	 * @return Bad request
+	 */
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	public ResponseEntity<ResponseDTO> handleMethodArgumentNotValidException(
 			MethodArgumentNotValidException exception) {
@@ -39,6 +60,12 @@ public class UserExceptionHandler {
 		return new ResponseEntity<ResponseDTO>(responseDTO, HttpStatus.BAD_REQUEST);
 	}
 
+	/**
+	 * purpose to handle custom exception
+	 * 
+	 * @param UserException object
+	 * @return Bad request
+	 */
 	@ExceptionHandler(UserException.class)
 	public ResponseEntity<ResponseDTO> handleUserException(UserException exception) {
 		ResponseDTO responseDTO = new ResponseDTO(message, exception.getMessage());

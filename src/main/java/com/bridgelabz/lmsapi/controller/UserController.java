@@ -28,12 +28,18 @@ import com.bridgelabz.lmsapi.util.JwtToken;
 
 import lombok.extern.slf4j.Slf4j;
 
+
+/**
+ * purpose to provide REST API call
+ * 
+ * @author Sanjay
+ * @version1.0
+ * @since 12/17/2021
+ * 
+ */
 @RestController
 @RequestMapping("/user")
 @Slf4j
-/**
- *User controller takes service of IUserService interface
- */
 public class UserController {
 
 	@Autowired
@@ -142,7 +148,7 @@ public class UserController {
 	 * Take emailId  to forget password
 	 *
 	 * @param forgetPass
-	 * @return ForgotPassword link sent successfulluy to emailId
+	 * @return ForgotPassword link sent successfully to emailId
 	 */
 	@GetMapping("/forgotpassword")
 	public ResponseEntity<ResponseDTO> ForgetPassword(@Valid @RequestBody ForgotPassDTO forgotPassDTO)
@@ -156,7 +162,7 @@ public class UserController {
 	 * Takes token and password to reset password
 	 *
 	 * @param password and token
-	 * @return passWord reset successfull
+	 * @return passWord reset successfully
 	 */
 	@PostMapping("/reset/{token}")
 	ResponseEntity<ResponseDTO> resetpass(@Valid @RequestParam String password, @PathVariable String token) {

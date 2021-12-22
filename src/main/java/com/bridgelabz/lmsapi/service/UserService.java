@@ -190,4 +190,19 @@ public class UserService implements IUserService {
 		throw new UserException("User not found");
 	}
 
+
+	@Override
+	public boolean verifyUser(String token) {
+		long id = jwtToken.decodeToken(token);
+		Optional<User> userPresent = userRepository.findById(id);
+		if(userPresent.isPresent()) {
+			userPresent.get().setActive(true);
+			userRepository.save(userPresent.get());
+
+			return true;
+		}else {
+			return false;
+		}
+	}
+
 }

@@ -40,4 +40,6 @@ public interface IUserService {
 	
 	User forgetPassword(@Valid ForgotPassDTO forgotPassDTO) throws MessagingException;
 
+	boolean verifyUser(String token);
+
 }

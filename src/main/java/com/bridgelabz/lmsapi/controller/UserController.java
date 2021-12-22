@@ -170,4 +170,9 @@ public class UserController {
 		ResponseDTO response = new ResponseDTO(" Password Reset Successfully", user);
 		return new ResponseEntity<ResponseDTO>(response, HttpStatus.OK);
 	}
+	@GetMapping("/verify")
+	ResponseEntity<Boolean> verifyUser(@RequestParam String token) {
+		boolean user = iUserService.verifyUser( token);
+		return new ResponseEntity<Boolean>(user, HttpStatus.OK);
+	}
 }

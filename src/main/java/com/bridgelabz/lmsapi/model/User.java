@@ -43,7 +43,7 @@ public class User {
 
 	private long contactNumber;
 
-	private boolean active = true;
+	private boolean active;
 
 	private Date registerDate;
 
